@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Salongbroneering.ee – Ilu algab planeerimisest</title>
+  <meta name="description" content="Salongbroneering.ee – lihtne online broneerimine ilusalongidele, massaažile ja spaateenustele.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/app-icon-180.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <meta name="theme-color" content="#ffcc33">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">
+      <img src="./assets/logo.svg" alt="Salongbroneering logo" class="logo">
+      <span>Salongbroneering.ee</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">Funktsioonid</a>
+      <a href="#pricing">Hinnad</a>
+      <a href="#contact" class="btn ghost">Võta ühendust</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Ilu algab planeerimisest</h1>
+      <p>Üks platvorm massaaži-, juuksuri- ja iluteenustele. Lihtne broneerimine klientidele, võimas kalender salongidele.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Alusta tasuta</a>
+        <a class="btn ghost" href="#features">Vaata, kuidas töötab</a>
+      </div>
+
+      <ul class="hero-points">
+        <li>✓ Salongidele ja terapeutidele</li>
+        <li>✓ Läbipaistev hind</li>
+        <li>✓ Kinnitus kohe e-postile</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Kõik, mida vajad online-broneerimiseks</h2>
+    <div class="grid3">
+      <div class="card">
+        <div class="ico">📅</div>
+        <h3>Nutikas kalender</h3>
+        <p>Reaalajas ajad, töötajate vaated, korduvad ajad, puhkus ja ülekatte kaitse.</p>
+      </div>
+      <div class="card">
+        <div class="ico">💳</div>
+        <h3>Ettemaks (valikuline)</h3>
+        <p>Vähenda mitteilmumist. Võimalus võtta ettemaksu või kinnitust ilma makseta.</p>
+      </div>
+      <div class="card">
+        <div class="ico">📣</div>
+        <h3>Teavitused</h3>
+        <p>E-kirja kinnitused ja meeldetuletused – vähem tühje aegu.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section alt">
+    <h2>Lihtne ja õiglane hinnastus</h2>
+    <p class="muted">Alustuseks sihime 100 salongi – hinnad võivad muutuda, kuid jäävad mõistlikuks.</p>
+
+    <div class="prices">
+      <div class="p-card">
+        <h3>Starter</h3>
+        <div class="price">9€ <span>/ kuu</span></div>
+        <ul>
+          <li>1 kasutaja</li>
+          <li>Veebibroneering</li>
+          <li>E-kirja kinnitused</li>
+        </ul>
+        <a class="btn primary light" href="#contact">Alusta</a>
+      </div>
+      <div class="p-card best">
+        <div class="badge">Soovituim</div>
+        <h3>Core</h3>
+        <div class="price">15€ <span>/ kuu</span></div>
+        <ul>
+          <li>Kuni 5 kasutajat</li>
+          <li>Täielik kalender</li>
+          <li>Meeldetuletused</li>
+        </ul>
+        <a class="btn primary" href="#contact">Alusta</a>
+      </div>
+      <div class="p-card">
+        <h3>Pro</h3>
+        <div class="price">39€ <span>/ kuu</span></div>
+        <ul>
+          <li>Piiramatu kasutajate arv</li>
+          <li>Rühmateenused</li>
+          <li>Ettemaks / tühistamisreeglid</li>
+        </ul>
+        <a class="btn primary light" href="#contact">Alusta</a>
+      </div>
+      <div class="p-card">
+        <h3>Unlimited</h3>
+        <div class="price">49€ <span>/ kuu</span></div>
+        <ul>
+          <li>Piiramatu broneering</li>
+          <li>Prioriteetne tugi</li>
+          <li>Mitme asukoha tugi</li>
+        </ul>
+        <a class="btn primary light" href="#contact">Võta ühendust</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Alustame koos</h2>
+    <p class="muted">Jäta meile e-post – kirjutame samal päeval tagasi.</p>
+    <form class="lead-form" name="lead" netlify>
+      <input type="email" name="email" placeholder="Teie e-post" required>
+      <button class="btn primary" type="submit">Saada</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div>© <span id="y"></span> Salongbroneering.ee</div>
+    <a href="#">Privaatsus</a>
+    <a href="#">Tingimused</a>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
